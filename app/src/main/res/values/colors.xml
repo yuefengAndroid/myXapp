@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="green">#008000</color><!--綠色 -->
+    <color name="blue">#0000FF</color><!--藍色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="olive">#808000</color><!--橄欖色 -->
+    <color name="purple">#800080</color><!--紫色 -->
+    <color name="red">#FF0000</color><!--紅色 -->
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="orange">#FFA500</color><!--橙色 -->
+    <color name="lightsalmon">#FFA07A</color><!--亮肉色 -->
+    <color name="darkorange">#FF8C00</color><!--暗橘黃色 -->
+    <color name="coral">#FF7F50</color><!--珊瑚色 -->
+    <color name="hotpink">#FF69B4</color><!--熱粉紅色 -->
+    <color name="tomato">#FF6347</color><!--西紅柿色 -->
+    <color name="orangered">#FF4500</color><!--紅橙色 -->
+    <color name="deeppink">#FF1493</color><!--深粉紅色 -->
+    <color name="fuchsia">#FF00FF</color><!--紫紅色 -->
+    <color name="magenta">#FF00FF</color><!--紅紫色 -->
+
+
+    <color name="gray_aaaaaa">#AAAAAA</color>
+    <color name="gray_dddddd">#DDDDDD</color>
+    <color name="gray_eeeeee">#EEEEEE</color>
+    <color name="gray_e7e7e7">#E7E7E7</color>
+    <color name="gray_ededed">#EdEdEd</color>
+    <color name="gray_888888">#888888</color>
+    <color name="gray_d8d8d8">#d8d8d8</color>
+    <color name="gray_f8f8f8">#f8f8f8</color>
+    <color name="gray_dbdbdb">#dbdbdb</color>
+    <color name="gray_747474">#747474</color>
+    <color name="black_222222">#222222</color>
+    <color name="black_2d2d2d">#2d2d2d</color>
+    <color name="black_242424">#242424</color>
+    <color name="black_0b0b0b">#0b0b0b</color>
+    <color name="black_b3000000">#b3000000</color>
+    <color name="gray_8e8e8e">#8e8e8e</color>
+    <color name="green_6fbd9a">#6fbd9a</color>
+    <color name="green_3ea779">#3ea779</color>
+    <color name="colorDarkGreen">#02bf1f</color>
+    <color name="DarkGreen_7cc5a4">#7cc5a4</color>
+    <color name="red_d0021b">#d0021b</color>
+    <color name="colorRed">#ff4043</color>
+    <color name="color_c05252">#c05252</color>
+</resources>
