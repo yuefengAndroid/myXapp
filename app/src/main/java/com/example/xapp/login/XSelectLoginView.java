@@ -14,9 +14,16 @@ import com.example.xapp.R;
 public class XSelectLoginView extends AppCompatActivity {
     private TextView aslvTvRegistered;  //註冊按鈕
     private TextView aslvTvLogin;       //登入按鈕
+    private ImageView aslvIvMaleRadioButtonImg; //男性按鈕
+    private ImageView aslvIvFemaleRadioButtonImg; //性按鈕
+    private TextView aslvTvNextButton; //下一步
+    private TextView aslvTvNextLoginButton; //登入
+    private ImageView aslvIvBackImg; //取消
     private ConstraintLayout aslvClRegisteredBackground; //註冊背景頁面
+    private ConstraintLayout aslvClLoginVerificationBackground; //登入與驗証背景頁面
     private ImageView aslvIvReadRadioImg; //
     private boolean isCheckReadAgree = false;   //判斷是否按了閱讀同意
+    private String CheckLoginType = ""; //1:註, 2:登入
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +36,22 @@ public class XSelectLoginView extends AppCompatActivity {
         aslvTvRegistered = findViewById(R.id.aslvTvRegistered);
         aslvTvLogin = findViewById(R.id.aslvTvLogin);
         aslvClRegisteredBackground = findViewById(R.id.aslvClRegisteredBackground);
+        aslvClLoginVerificationBackground = findViewById(R.id.aslvClLoginVerificationBackground);
         aslvIvReadRadioImg = findViewById(R.id.aslvIvReadRadioImg);
+        aslvIvMaleRadioButtonImg = findViewById(R.id.aslvIvMaleRadioButtonImg);
+        aslvIvFemaleRadioButtonImg = findViewById(R.id.aslvIvFemaleRadioButtonImg);
+        aslvTvNextButton = findViewById(R.id.aslvTvNextButton);
+        aslvTvNextLoginButton = findViewById(R.id.aslvTvNextLoginButton);
+        aslvIvBackImg = findViewById(R.id.aslvIvBackImg);
         //設定ONClickListener
         aslvTvRegistered.setOnClickListener(OnClickListener);
         aslvTvLogin.setOnClickListener(OnClickListener);
         aslvIvReadRadioImg.setOnClickListener(OnClickListener);
+        aslvIvMaleRadioButtonImg.setOnClickListener(OnClickListener);
+        aslvIvFemaleRadioButtonImg.setOnClickListener(OnClickListener);
+        aslvIvBackImg.setOnClickListener(OnClickListener);
+        aslvTvNextButton.setOnClickListener(OnClickListener);
+        aslvTvNextLoginButton.setOnClickListener(OnClickListener);
     }
 
     //各個按鈕的Click事件
@@ -43,12 +61,28 @@ public class XSelectLoginView extends AppCompatActivity {
             Intent intent = new Intent();
             switch (view.getId()) {
                 case R.id.aslvTvRegistered:
-//                    intent.setClass(XSelectLoginView.this, XRegisteredView2.class);
-//                    startActivity(intent);
+                    CheckLoginType = "1";
                     aslvClRegisteredBackground.setVisibility(View.VISIBLE);
                     break;
+                case R.id.aslvIvBackImg:
+                    if ("1".equals(CheckLoginType)) {
+                        aslvClLoginVerificationBackground.setVisibility(View.GONE);
+                        aslvClRegisteredBackground.setVisibility(View.VISIBLE);
+                    } else {
+                        aslvClLoginVerificationBackground.setVisibility(View.GONE);
+                    }
+                    break;
                 case R.id.aslvTvLogin:
-
+                    CheckLoginType = "2";
+                    aslvClRegisteredBackground.setVisibility(View.GONE);
+                    aslvClLoginVerificationBackground.setVisibility(View.VISIBLE);
+                    break;
+                case R.id.aslvTvNextButton:
+                case R.id.aslvTvNextLoginButton:
+                    aslvClRegisteredBackground.setVisibility(View.GONE);
+                    aslvClLoginVerificationBackground.setVisibility(View.VISIBLE);
+//                    intent.setClass(XSelectLoginView.this, XRegisteredView2.class);
+//                    startActivity(intent);
                     break;
                 case R.id.aslvIvReadRadioImg:
                     if (isCheckReadAgree) {
@@ -58,6 +92,14 @@ public class XSelectLoginView extends AppCompatActivity {
                         isCheckReadAgree = true;
                         aslvIvReadRadioImg.setImageResource(R.drawable.tickf);
                     }
+                    break;
+                case R.id.aslvIvMaleRadioButtonImg:
+                    aslvIvMaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_true);
+                    aslvIvFemaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_false);
+                    break;
+                case R.id.aslvIvFemaleRadioButtonImg:
+                    aslvIvMaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_false);
+                    aslvIvFemaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_true);
                     break;
             }
         }
