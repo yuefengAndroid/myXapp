@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.xapp.R;
+import com.example.xapp.home.XStartPlatformView;
 
 public class XSelectLoginView extends AppCompatActivity {
     private TextView aslvTvRegistered;  //註冊按鈕
@@ -24,6 +25,7 @@ public class XSelectLoginView extends AppCompatActivity {
     private ImageView aslvIvReadRadioImg; //
     private boolean isCheckReadAgree = false;   //判斷是否按了閱讀同意
     private String CheckLoginType = ""; //1:註, 2:登入
+    private TextView aslvTvLoginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class XSelectLoginView extends AppCompatActivity {
         aslvTvNextButton = findViewById(R.id.aslvTvNextButton);
         aslvTvNextLoginButton = findViewById(R.id.aslvTvNextLoginButton);
         aslvIvBackImg = findViewById(R.id.aslvIvBackImg);
+        aslvTvLoginButton = findViewById(R.id.aslvTvLoginButton);
         //設定ONClickListener
         aslvTvRegistered.setOnClickListener(OnClickListener);
         aslvTvLogin.setOnClickListener(OnClickListener);
@@ -52,6 +55,7 @@ public class XSelectLoginView extends AppCompatActivity {
         aslvIvBackImg.setOnClickListener(OnClickListener);
         aslvTvNextButton.setOnClickListener(OnClickListener);
         aslvTvNextLoginButton.setOnClickListener(OnClickListener);
+        aslvTvLoginButton.setOnClickListener(OnClickListener);
     }
 
     //各個按鈕的Click事件
@@ -73,16 +77,15 @@ public class XSelectLoginView extends AppCompatActivity {
                     }
                     break;
                 case R.id.aslvTvLogin:
-                    CheckLoginType = "2";
+                case R.id.aslvTvNextLoginButton:
+                    aslvClLoginVerificationBackground.setVisibility(View.GONE);
                     aslvClRegisteredBackground.setVisibility(View.GONE);
-                    aslvClLoginVerificationBackground.setVisibility(View.VISIBLE);
+                    intent.setClass(XSelectLoginView.this, XLoginView.class);
+                    startActivity(intent);
                     break;
                 case R.id.aslvTvNextButton:
-                case R.id.aslvTvNextLoginButton:
                     aslvClRegisteredBackground.setVisibility(View.GONE);
                     aslvClLoginVerificationBackground.setVisibility(View.VISIBLE);
-//                    intent.setClass(XSelectLoginView.this, XRegisteredView2.class);
-//                    startActivity(intent);
                     break;
                 case R.id.aslvIvReadRadioImg:
                     if (isCheckReadAgree) {
@@ -100,6 +103,11 @@ public class XSelectLoginView extends AppCompatActivity {
                 case R.id.aslvIvFemaleRadioButtonImg:
                     aslvIvMaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_false);
                     aslvIvFemaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_true);
+                    break;
+                case R.id.aslvTvLoginButton:
+                    intent.setClass(XSelectLoginView.this, XStartPlatformView.class);
+                    startActivity(intent);
+                    finish();
                     break;
             }
         }

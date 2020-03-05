@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpinkbackground"
+    tools:context=".login.XLoginView">
+
+    <EditText
+        android:id="@+id/alvEtInputPhoneNumber"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="130dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="請輸入您的手機號碼"
+        android:inputType="number"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/alvEtInputPassword"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@null"
+        android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="***********"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/alvEtInputPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/alvEtInputPhoneNumber" />
+
+    <TextView
+        android:id="@+id/alvTvLoginButton"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintLeft_toLeftOf="@+id/alvEtInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/alvEtInputPassword"/>
+
+    <TextView
+        android:id="@+id/alvTvGoRegisteredButton"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,297 +12,298 @@
         android:layout_width="350dp"
         android:layout_height="38dp"
         android:layout_marginBottom="210dp"
-        android:textSize="20sp"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/aslvTvLogin"
         android:layout_width="350dp"
         android:layout_height="38dp"
         android:layout_marginTop="40dp"
-        android:textSize="20sp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvRegistered"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aslvTvRegistered" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/aslvClRegisteredBackground"
-    android:layout_width="0dp"
-    android:layout_height="560dp"
-    android:layout_marginStart="25dp"
-    android:layout_marginEnd="25dp"
-    android:visibility="gone"
-    android:background="@drawable/background_ffffff_radius12"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent">
-
-    <EditText
-        android:id="@+id/aslvEtInputNickname"
-        android:layout_width="190dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@null"
-        android:ellipsize="end"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:hint="愛在寂寞潮吹時"
-        android:inputType="text"
-        android:maxLength="20"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textColor="@color/black_0b0b0b"
-        android:textColorHint="@color/gray_8e8e8e"
-        android:textSize="17sp"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvInputNicknameText" />
-
-    <TextView
-        android:id="@+id/aslvTvInputNicknameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/aslvClRegisteredBackground"
+        android:layout_width="0dp"
+        android:layout_height="560dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="90dp"
-        android:text="輸入您的暱稱"
-        android:textColor="@color/black_2d2d2d"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toTopOf="@+id/aslvClRegisteredBackground" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="註冊"
-        android:textColor="@color/black_2d2d2d"
-        android:textSize="28sp"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toTopOf="@+id/aslvClRegisteredBackground" />
-
-    <TextView
-        android:id="@+id/aslvTvNicknameLine"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="25dp"
-        android:background="@color/gray_747474"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
-        app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toBottomOf="@+id/aslvEtInputNickname" />
+        android:background="@drawable/background_ffffff_radius12"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/aslvTvInputGenderText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="您的性別"
-        android:textColor="@color/black_2d2d2d"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvNicknameLine"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"/>
+        <EditText
+            android:id="@+id/aslvEtInputNickname"
+            android:layout_width="190dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="愛在寂寞潮吹時"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black_0b0b0b"
+            android:textColorHint="@color/gray_8e8e8e"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvInputNicknameText" />
 
-    <ImageView
-        android:id="@+id/aslvIvMaleRadioButtonImg"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/radio_button_false"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputGenderText"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvInputGenderText"/>
+        <TextView
+            android:id="@+id/aslvTvInputNicknameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="90dp"
+            android:text="輸入您的暱稱"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toTopOf="@+id/aslvClRegisteredBackground" />
 
-    <TextView
-        android:id="@+id/aslvTvMaleRadioiButtonText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="男性"
-        android:textSize="18sp"
-        android:textColor="@color/gray_8e8e8e"
-        app:layout_constraintTop_toTopOf="@+id/aslvIvMaleRadioButtonImg"
-        app:layout_constraintBottom_toBottomOf="@+id/aslvIvMaleRadioButtonImg"
-        app:layout_constraintLeft_toRightOf="@+id/aslvIvMaleRadioButtonImg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="註冊"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="28sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toTopOf="@+id/aslvClRegisteredBackground" />
 
-    <ImageView
-        android:id="@+id/aslvIvFemaleRadioButtonImg"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="40dp"
-        android:src="@drawable/radio_button_false"
-        app:layout_constraintTop_toTopOf="@+id/aslvIvMaleRadioButtonImg"
-        app:layout_constraintLeft_toRightOf="@+id/aslvTvMaleRadioiButtonText"
-        app:layout_constraintBottom_toBottomOf="@+id/aslvIvMaleRadioButtonImg"/>
+        <TextView
+            android:id="@+id/aslvTvNicknameLine"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/gray_747474"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
+            app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toBottomOf="@+id/aslvEtInputNickname" />
 
-    <TextView
-        android:id="@+id/aslvTvFemaleRadioiButtonText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="女性"
-        android:textSize="18sp"
-        android:textColor="@color/gray_8e8e8e"
-        app:layout_constraintTop_toTopOf="@+id/aslvIvFemaleRadioButtonImg"
-        app:layout_constraintBottom_toBottomOf="@+id/aslvIvFemaleRadioButtonImg"
-        app:layout_constraintLeft_toRightOf="@+id/aslvIvFemaleRadioButtonImg"/>
+        <TextView
+            android:id="@+id/aslvTvInputGenderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="您的性別"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvNicknameLine" />
 
-    <TextView
-        android:id="@+id/aslvTvGenderLine"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="25dp"
-        android:background="@color/gray_747474"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputGenderText"
-        app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toBottomOf="@+id/aslvIvMaleRadioButtonImg" />
+        <ImageView
+            android:id="@+id/aslvIvMaleRadioButtonImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/radio_button_false"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputGenderText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvInputGenderText" />
 
-    <TextView
-        android:id="@+id/aslvTvInputPhoneNumberText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="輸入您的手機作為帳號"
-        android:textColor="@color/black_2d2d2d"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvGenderLine"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"/>
+        <TextView
+            android:id="@+id/aslvTvMaleRadioiButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="男性"
+            android:textColor="@color/gray_8e8e8e"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aslvIvMaleRadioButtonImg"
+            app:layout_constraintLeft_toRightOf="@+id/aslvIvMaleRadioButtonImg"
+            app:layout_constraintTop_toTopOf="@+id/aslvIvMaleRadioButtonImg" />
 
-    <EditText
-        android:id="@+id/aslvEtInputPhoneNumber"
-        android:layout_width="190dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@null"
-        android:ellipsize="end"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:hint="0912555123"
-        android:inputType="number"
-        android:maxLength="20"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textColor="@color/black_0b0b0b"
-        android:textColorHint="@color/gray_8e8e8e"
-        android:textSize="17sp"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPhoneNumberText"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvInputPhoneNumberText" />
+        <ImageView
+            android:id="@+id/aslvIvFemaleRadioButtonImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/radio_button_false"
+            app:layout_constraintBottom_toBottomOf="@+id/aslvIvMaleRadioButtonImg"
+            app:layout_constraintLeft_toRightOf="@+id/aslvTvMaleRadioiButtonText"
+            app:layout_constraintTop_toTopOf="@+id/aslvIvMaleRadioButtonImg" />
 
-    <TextView
-        android:id="@+id/aslvTvPhoneNumberLine"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="25dp"
-        android:background="@color/gray_747474"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPhoneNumberText"
-        app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toBottomOf="@+id/aslvEtInputPhoneNumber" />
+        <TextView
+            android:id="@+id/aslvTvFemaleRadioiButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="女性"
+            android:textColor="@color/gray_8e8e8e"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aslvIvFemaleRadioButtonImg"
+            app:layout_constraintLeft_toRightOf="@+id/aslvIvFemaleRadioButtonImg"
+            app:layout_constraintTop_toTopOf="@+id/aslvIvFemaleRadioButtonImg" />
 
-    <TextView
-        android:id="@+id/aslvTvInputPasswordText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="輸入您的密碼"
-        android:textColor="@color/black_2d2d2d"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvPhoneNumberLine"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"/>
+        <TextView
+            android:id="@+id/aslvTvGenderLine"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/gray_747474"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputGenderText"
+            app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toBottomOf="@+id/aslvIvMaleRadioButtonImg" />
 
-    <EditText
-        android:id="@+id/aslvEtInputPassword"
-        android:layout_width="190dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@null"
-        android:ellipsize="end"
-        android:focusable="true"
-        android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
-        android:focusableInTouchMode="true"
-        android:hint="輸入您的密碼"
-        android:inputType="textPassword"
-        android:maxLength="20"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textColor="@color/black_0b0b0b"
-        android:textColorHint="@color/gray_8e8e8e"
-        android:textSize="17sp"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPasswordText"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvInputPasswordText" />
-    <TextView
-        android:id="@+id/aslvTvPhonePasswordLine"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="25dp"
-        android:background="@color/gray_747474"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPasswordText"
-        app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
-        app:layout_constraintTop_toBottomOf="@+id/aslvEtInputPassword" />
+        <TextView
+            android:id="@+id/aslvTvInputPhoneNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="輸入您的手機作為帳號"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvGenderLine" />
 
-    <ImageView
-        android:id="@+id/aslvIvReadRadioImg"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/tick"
-        app:layout_constraintBottom_toTopOf="@+id/aslvTvNextButton"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
-        app:layout_constraintRight_toLeftOf="@+id/aslvTvPrivacyText"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvPhonePasswordLine" />
+        <EditText
+            android:id="@+id/aslvEtInputPhoneNumber"
+            android:layout_width="190dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="0912555123"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black_0b0b0b"
+            android:textColorHint="@color/gray_8e8e8e"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPhoneNumberText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvInputPhoneNumberText" />
 
-    <TextView
-        android:id="@+id/aslvTvPrivacyText"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:gravity="center"
-        android:textSize="12sp"
-        android:layout_marginStart="10dp"
-        android:text="我已經充分了解隱私權政策, 並且同意此政策"
-        android:textColor="@color/black_2d2d2d"
-        app:layout_constraintTop_toTopOf="@+id/aslvIvReadRadioImg"
-        app:layout_constraintBottom_toBottomOf="@+id/aslvIvReadRadioImg"
-        app:layout_constraintLeft_toRightOf="@+id/aslvIvReadRadioImg"/>
+        <TextView
+            android:id="@+id/aslvTvPhoneNumberLine"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/gray_747474"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPhoneNumberText"
+            app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toBottomOf="@+id/aslvEtInputPhoneNumber" />
 
-    <TextView
-        android:id="@+id/aslvTvNextButton"
-        android:layout_width="0dp"
-        android:layout_marginTop="15dp"
-        android:layout_height="35dp"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:text="下一步"
-        android:gravity="center"
-        android:background="@drawable/button_ff73b3_radius12"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvPrivacyText"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
-        app:layout_constraintRight_toRightOf="@+id/aslvTvPhonePasswordLine"/>
+        <TextView
+            android:id="@+id/aslvTvInputPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="輸入您的密碼"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputNicknameText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvPhoneNumberLine" />
 
-    <TextView
-        android:id="@+id/aslvTvNextLoginButton"
-        android:layout_width="0dp"
-        android:layout_marginTop="15dp"
-        android:layout_height="35dp"
-        android:textSize="16sp"
-        android:textColor="@color/black_2d2d2d"
-        android:text="我已經有註冊過,登入"
-        android:gravity="center"
-        android:background="@drawable/button_d8d8d8_radius12"
-        app:layout_constraintTop_toBottomOf="@+id/aslvTvNextButton"
-        app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
-        app:layout_constraintRight_toRightOf="@+id/aslvTvPhonePasswordLine"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/aslvEtInputPassword"
+            android:layout_width="190dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="輸入您的密碼"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black_0b0b0b"
+            android:textColorHint="@color/gray_8e8e8e"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPasswordText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvInputPasswordText" />
+
+        <TextView
+            android:id="@+id/aslvTvPhonePasswordLine"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/gray_747474"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvInputPasswordText"
+            app:layout_constraintRight_toRightOf="@+id/aslvClRegisteredBackground"
+            app:layout_constraintTop_toBottomOf="@+id/aslvEtInputPassword" />
+
+        <ImageView
+            android:id="@+id/aslvIvReadRadioImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tick"
+            app:layout_constraintBottom_toTopOf="@+id/aslvTvNextButton"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
+            app:layout_constraintRight_toLeftOf="@+id/aslvTvPrivacyText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvPhonePasswordLine" />
+
+        <TextView
+            android:id="@+id/aslvTvPrivacyText"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="我已經充分了解隱私權政策, 並且同意此政策"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aslvIvReadRadioImg"
+            app:layout_constraintLeft_toRightOf="@+id/aslvIvReadRadioImg"
+            app:layout_constraintTop_toTopOf="@+id/aslvIvReadRadioImg" />
+
+        <TextView
+            android:id="@+id/aslvTvNextButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_ff73b3_radius12"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
+            app:layout_constraintRight_toRightOf="@+id/aslvTvPhonePasswordLine"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvPrivacyText" />
+
+        <TextView
+            android:id="@+id/aslvTvNextLoginButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_d8d8d8_radius12"
+            android:gravity="center"
+            android:text="我已經有註冊過,登入"
+            android:textColor="@color/black_2d2d2d"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhonePasswordLine"
+            app:layout_constraintRight_toRightOf="@+id/aslvTvPhonePasswordLine"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvNextButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/aslvClLoginVerificationBackground"
@@ -310,12 +311,12 @@
         android:layout_height="560dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
-        android:visibility="gone"
         android:background="@drawable/background_ffffff_radius12"
-        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/aslvTvTitle"
@@ -336,9 +337,9 @@
             android:layout_height="26dp"
             android:layout_marginEnd="25dp"
             android:src="@drawable/clear"
-            app:layout_constraintTop_toTopOf="@+id/aslvTvTitle"
             app:layout_constraintBottom_toBottomOf="@+id/aslvTvTitle"
-            app:layout_constraintRight_toRightOf="@+id/aslvClLoginVerificationBackground"/>
+            app:layout_constraintRight_toRightOf="@+id/aslvClLoginVerificationBackground"
+            app:layout_constraintTop_toTopOf="@+id/aslvTvTitle" />
 
         <TextView
             android:id="@+id/aslvTvPhoneNumberText"
@@ -350,7 +351,7 @@
             android:textColor="@color/black_2d2d2d"
             android:textSize="18sp"
             app:layout_constraintLeft_toLeftOf="@+id/aslvClLoginVerificationBackground"
-            app:layout_constraintTop_toTopOf="@+id/aslvClLoginVerificationBackground"/>
+            app:layout_constraintTop_toTopOf="@+id/aslvClLoginVerificationBackground" />
 
         <EditText
             android:id="@+id/aslvEtPhoneNumber"
@@ -392,8 +393,8 @@
             android:text="輸入邀請碼"
             android:textColor="@color/black_2d2d2d"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/aslvTvPhoneNumberLine1"
-            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhoneNumberText"/>
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhoneNumberText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvPhoneNumberLine1" />
 
         <EditText
             android:id="@+id/aslvEtInputInvitationCode"
@@ -402,9 +403,9 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@null"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
             android:ellipsize="end"
             android:focusable="true"
-            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
             android:focusableInTouchMode="true"
             android:hint="KJ851QU"
             android:inputType="textPassword"
@@ -436,8 +437,8 @@
             android:text="輸入驗證碼"
             android:textColor="@color/black_2d2d2d"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/aslvTvInvitationCodeLine"
-            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhoneNumberText"/>
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvPhoneNumberText"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvInvitationCodeLine" />
 
         <EditText
             android:id="@+id/aslvEtInputVerificationCode"
@@ -446,9 +447,9 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@null"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
             android:ellipsize="end"
             android:focusable="true"
-            android:digits="1234567890qwertyuiopasdfghjklzxcvbnm"
             android:focusableInTouchMode="true"
             android:hint="SWOQ4"
             android:inputType="textPassword"
@@ -465,14 +466,14 @@
             android:id="@+id/aslvTvNGetVerificationCodeButton"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:textSize="16sp"
-            android:textColor="@color/hotpink"
-            android:text="取得驗證碼"
-            android:gravity="center"
             android:background="@drawable/button_d8d8d8_radius12"
-           app:layout_constraintTop_toTopOf="@+id/aslvEtInputVerificationCode"
+            android:gravity="center"
+            android:text="取得驗證碼"
+            android:textColor="@color/hotpink"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aslvEtInputVerificationCode"
             app:layout_constraintRight_toRightOf="@+id/aslvTvVerificationCodeLine"
-            app:layout_constraintBottom_toBottomOf="@+id/aslvEtInputVerificationCode"/>
+            app:layout_constraintTop_toTopOf="@+id/aslvEtInputVerificationCode" />
 
         <TextView
             android:id="@+id/aslvTvVerificationCodeLine"
@@ -488,17 +489,17 @@
         <TextView
             android:id="@+id/aslvTvLoginButton"
             android:layout_width="0dp"
-            android:layout_marginTop="135dp"
             android:layout_height="35dp"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:text="登入"
-            android:gravity="center"
+            android:layout_marginTop="135dp"
             android:background="@drawable/button_ff73b3_radius12"
-            app:layout_constraintTop_toBottomOf="@+id/aslvTvVerificationCodeLine"
-            app:layout_constraintLeft_toLeftOf="@+id/aslvTvVerificationCodeLine"
+            android:gravity="center"
+            android:text="登入"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/aslvClLoginVerificationBackground"
-            app:layout_constraintRight_toRightOf="@+id/aslvTvVerificationCodeLine"/>
+            app:layout_constraintLeft_toLeftOf="@+id/aslvTvVerificationCodeLine"
+            app:layout_constraintRight_toRightOf="@+id/aslvTvVerificationCodeLine"
+            app:layout_constraintTop_toBottomOf="@+id/aslvTvVerificationCodeLine" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

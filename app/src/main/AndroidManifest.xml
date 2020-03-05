@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.xapp">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -18,9 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".login.XSelectLoginView"
+            android:name=".home.XStartPlatformView"
             android:screenOrientation="portrait"
             android:theme="@style/XViewActivity"/>
+        <activity
+            android:name=".login.XLoginView"
+            android:screenOrientation="portrait"
+            android:theme="@style/XViewActivity" />
+        <activity
+            android:name=".login.XSelectLoginView"
+            android:screenOrientation="portrait"
+            android:theme="@style/XViewActivity" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
