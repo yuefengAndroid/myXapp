@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.xapp.R;
-import com.example.xapp.home.XStartPlatformView;
 
 public class XLoginView extends AppCompatActivity {
     private TextView alvTvLoginButton;
@@ -36,14 +35,14 @@ public class XLoginView extends AppCompatActivity {
             Intent intent = new Intent();
             switch (view.getId()) {
                 case R.id.alvTvLoginButton:
-                    intent.setClass(XLoginView.this, XStartPlatformView.class);
+                    intent.setClass(XLoginView.this, XChatroomView.class);
                     startActivity(intent);
-                    finish();
+
                     break;
                 case R.id.alvTvGoRegisteredButton:
                     intent.setClass(XLoginView.this, XSelectLoginView.class);
                     startActivity(intent);
-                    finish();
+
                     break;
             }
         }

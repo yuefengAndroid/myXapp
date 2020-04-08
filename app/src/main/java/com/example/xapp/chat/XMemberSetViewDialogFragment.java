@@ -1,21 +1,22 @@
-package com.example.xapp.home;
+package com.example.xapp.chat;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.xapp.R;
-import com.example.xapp.base.XFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 
-public class XHomeListView extends XFragment {
+public class XMemberSetViewDialogFragment extends DialogFragment {
     private Activity activity;
-    private View view;
+    private Dialog dialog;
+
 
     @Override
     public void onAttach(@NonNull Activity activity) {
@@ -29,14 +30,16 @@ public class XHomeListView extends XFragment {
         this.activity = (Activity) context;
     }
 
-    @Nullable
+    @NonNull
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.view_homelist, container, false);
-        return view;
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+        dialog = new Dialog(activity, R.style.XDialogFragment);
+        dialog.setContentView(R.layout.view_member_setting);
+        initComponent();
+        return super.onCreateDialog(savedInstanceState);
     }
-    @Override
-    public void refresh() {
+
+    private void initComponent() {
 
     }
 }

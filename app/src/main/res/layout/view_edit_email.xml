@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/veeTvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_fillet_ffffff_radius18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/veeTvTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="電子信箱"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/veeTvEmailBackground"
+        app:layout_constraintLeft_toLeftOf="@+id/veeTvBackground"
+        app:layout_constraintRight_toRightOf="@+id/veeTvBackground"
+        app:layout_constraintTop_toTopOf="@+id/veeTvBackground" />
+
+    <ImageView
+        android:id="@+id/veeBackImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/backb"
+        app:layout_constraintBottom_toBottomOf="@+id/veeIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/veeTvTitleText"
+        app:layout_constraintTop_toTopOf="@+id/veeIvCloseImg" />
+
+    <ImageView
+        android:id="@+id/veeIvCloseImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/back_x"
+        app:layout_constraintBottom_toBottomOf="@+id/veeTvTitleText"
+        app:layout_constraintRight_toRightOf="@+id/veeTvTitleText"
+        app:layout_constraintTop_toTopOf="@+id/veeTvTitleText" />
+
+    <TextView
+        android:id="@+id/veeTvEmailBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veeTvTitleText" />
+
+    <TextView
+        android:id="@+id/veeTvEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="輸入您要更換的信箱"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toRightOf="@+id/editbg"
+        app:layout_constraintTop_toTopOf="@+id/veeTvEmailBackground" />
+
+    <TextView
+        android:id="@+id/editbg"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/background_ffffff_radius04"
+        app:layout_constraintTop_toBottomOf="@+id/veeTvEmailText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/veeEtInputEmail"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:hint="service_sexy@xapp.com.tw"
+        android:inputType="text"
+        android:maxLength="35"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColorHint="@color/gray_747474"
+        android:textSize="17sp"
+        app:layout_constraintTop_toTopOf="@+id/editbg"
+        app:layout_constraintBottom_toBottomOf="@+id/editbg"
+        app:layout_constraintLeft_toLeftOf="@+id/editbg"
+        app:layout_constraintRight_toRightOf="@+id/editbg"/>
+
+    <TextView
+        android:id="@+id/SaveChangeEmailBtn"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        android:text="儲存"
+        android:textSize="18dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/hotpink"
+        app:layout_constraintTop_toBottomOf="@+id/veeEtInputEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

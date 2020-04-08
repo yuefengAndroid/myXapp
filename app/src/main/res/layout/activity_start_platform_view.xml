@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.XStartPlatformView">
+    tools:context=".login.XStartPlatformView">
 
   <com.example.xapp.base.XNoScrollViewPager
       android:id="@+id/aspvVpAllView"

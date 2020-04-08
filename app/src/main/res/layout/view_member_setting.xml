@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vmsTvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_fillet_ffffff_radius18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vmsTvTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="設定"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBackground"
+        app:layout_constraintRight_toRightOf="@+id/vmsTvBackground"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBackground"
+        app:layout_constraintBottom_toTopOf="@+id/vmsTvMFaceBg"/>
+
+    <ImageView
+        android:id="@+id/vmsBackImg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/backb"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvTitleText"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvCloseImg"/>
+
+    <ImageView
+        android:id="@+id/vmsIvCloseImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back_x"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTitleText"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTitleText"
+        app:layout_constraintRight_toRightOf="@+id/vmsTvTitleText"/>
+
+    <TextView
+        android:id="@+id/vmsTvMFaceBg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/mface_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvTitleText"/>
+
+    <ImageView
+        android:id="@+id/vmsIvMemberFaceImg"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/girls09"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvMFaceBg"
+        app:layout_constraintRight_toRightOf="@+id/vmsTvMFaceBg"
+        app:layout_constraintBottom_toTopOf="@+id/vmsTvMemberNickname"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvMFaceBg"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/camera"
+        app:layout_constraintRight_toRightOf="@+id/vmsTvFaceCameraBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvFaceCameraBtn"/>
+
+    <TextView
+        android:id="@+id/vmsTvFaceCameraBtn"
+        android:layout_width="95dp"
+        android:layout_height="78dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintRight_toRightOf="@+id/vmsIvMemberFaceImg"/>
+
+    <TextView
+        android:id="@+id/vmsTvMemberNickname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Cody Brown"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintRight_toRightOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintTop_toBottomOf="@+id/vmsIvMemberFaceImg"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvMFaceBg"/>
+
+    <ImageView
+        android:id="@+id/changeNicknameBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:src="@drawable/changename"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvMemberNickname"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvMemberNickname"
+        app:layout_constraintLeft_toRightOf="@+id/vmsTvMemberNickname"/>
+
+    <TextView
+        android:id="@+id/vmsTvBg_white1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvMFaceBg" />
+
+    <ImageView
+        android:id="@+id/vmsIvImgK01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/k01"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBg_white1"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBg_white1"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvBg_white1"/>
+
+    <TextView
+        android:id="@+id/vmsTvTextK01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="會員編號"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK01"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK01"
+        app:layout_constraintLeft_toRightOf="@+id/vmsIvImgK01"/>
+
+    <TextView
+        android:id="@+id/memberId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:text="02252168"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTextK01"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTextK01"
+        app:layout_constraintLeft_toRightOf="@+id/vmsTvTextK01" />
+
+    <TextView
+        android:id="@+id/vsTvLineK01"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvTextK01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white1" />
+
+    <TextView
+        android:id="@+id/vmsTvBg_white2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white1" />
+
+    <ImageView
+        android:id="@+id/vmsIvImgK02"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/k02"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBg_white2"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBg_white2"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvBg_white2"/>
+
+    <TextView
+        android:id="@+id/vmsTvTextK02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="電話號碼"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK02"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK02"
+        app:layout_constraintLeft_toRightOf="@+id/vmsIvImgK02"/>
+
+    <TextView
+        android:id="@+id/memberPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:text="+886 952 022 158"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTextK02"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTextK02"
+        app:layout_constraintLeft_toRightOf="@+id/vmsTvTextK02" />
+
+    <TextView
+        android:id="@+id/vsTvLineK02"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvTextK02"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white2" />
+
+    <TextView
+        android:id="@+id/vmsTvBg_white3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white2" />
+
+    <ImageView
+        android:id="@+id/vmsIvImgK03"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/k03"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBg_white3"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBg_white3"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvBg_white3"/>
+
+    <TextView
+        android:id="@+id/vmsTvTextK03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="電子信箱"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK03"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK03"
+        app:layout_constraintLeft_toRightOf="@+id/vmsIvImgK03"/>
+
+    <TextView
+        android:id="@+id/memberEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="x_app@service.com.tw"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTextK03"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTextK03"
+        app:layout_constraintRight_toLeftOf="@+id/vsIvNextImgK03"
+       app:layout_constraintLeft_toLeftOf="@+id/memberPhoneNumber" />
+
+    <ImageView
+        android:id="@+id/vsIvNextImgK03"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK03"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK03"
+        app:layout_constraintRight_toRightOf="@+id/vmsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLineK03"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvTextK03"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white3" />
+
+    <TextView
+        android:id="@+id/vmsTvBg_white4"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white3" />
+
+    <ImageView
+        android:id="@+id/vmsIvImgK04"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/k04"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBg_white4"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBg_white4"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvBg_white4"/>
+
+    <TextView
+        android:id="@+id/vmsTvTextK04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="密碼修改"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK04"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK04"
+        app:layout_constraintLeft_toRightOf="@+id/vmsIvImgK04"/>
+
+    <TextView
+        android:id="@+id/memberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:text="************"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTextK04"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTextK04"
+        app:layout_constraintLeft_toRightOf="@+id/vmsTvTextK04" />
+
+    <ImageView
+        android:id="@+id/vsIvNextImgK04"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK04"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK04"
+        app:layout_constraintRight_toRightOf="@+id/vmsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLineK04"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvTextK04"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white4" />
+
+    <TextView
+        android:id="@+id/vmsTvBg_white5"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white4" />
+
+    <ImageView
+        android:id="@+id/vmsIvImgK05"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/k05"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvBg_white5"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsTvBg_white5"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvBg_white5"/>
+
+    <TextView
+        android:id="@+id/vmsTvTextK05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="推薦代碼"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK05"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK05"
+        app:layout_constraintLeft_toRightOf="@+id/vmsIvImgK05"/>
+
+    <TextView
+        android:id="@+id/memberRecommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:text="GK9562J"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/vmsTvTextK05"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsTvTextK05"
+        app:layout_constraintLeft_toRightOf="@+id/vmsTvTextK05" />
+
+    <ImageView
+        android:id="@+id/vsIvNextImgK05"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vmsIvImgK05"
+        app:layout_constraintBottom_toBottomOf="@+id/vmsIvImgK05"
+        app:layout_constraintRight_toRightOf="@+id/vmsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vmsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLineK05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmsTvBg_white5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

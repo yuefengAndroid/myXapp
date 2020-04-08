@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.xapp.R;
-import com.example.xapp.home.XStartPlatformView;
 
 public class XSelectLoginView extends AppCompatActivity {
     private TextView aslvTvRegistered;  //註冊按鈕
@@ -76,13 +75,6 @@ public class XSelectLoginView extends AppCompatActivity {
                         aslvClLoginVerificationBackground.setVisibility(View.GONE);
                     }
                     break;
-                case R.id.aslvTvLogin:
-                case R.id.aslvTvNextLoginButton:
-                    aslvClLoginVerificationBackground.setVisibility(View.GONE);
-                    aslvClRegisteredBackground.setVisibility(View.GONE);
-                    intent.setClass(XSelectLoginView.this, XLoginView.class);
-                    startActivity(intent);
-                    break;
                 case R.id.aslvTvNextButton:
                     aslvClRegisteredBackground.setVisibility(View.GONE);
                     aslvClLoginVerificationBackground.setVisibility(View.VISIBLE);
@@ -104,6 +96,8 @@ public class XSelectLoginView extends AppCompatActivity {
                     aslvIvMaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_false);
                     aslvIvFemaleRadioButtonImg.setBackgroundResource(R.drawable.radio_button_true);
                     break;
+                case R.id.aslvTvLogin:
+                case R.id.aslvTvNextLoginButton:
                 case R.id.aslvTvLoginButton:
                     intent.setClass(XSelectLoginView.this, XStartPlatformView.class);
                     startActivity(intent);

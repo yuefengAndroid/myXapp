@@ -19,9 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".home.XStartPlatformView"
+            android:name=".home.XSettingView"
             android:screenOrientation="portrait"
-            android:theme="@style/XViewActivity"/>
+            android:theme="@style/XViewActivity" />
+        <activity
+            android:name=".login.XChatroomView"
+            android:screenOrientation="portrait"
+            android:theme="@style/XViewActivity" />
+        <activity
+            android:name=".login.XStartPlatformView"
+            android:screenOrientation="portrait"
+            android:theme="@style/XViewActivity" />
         <activity
             android:name=".login.XLoginView"
             android:screenOrientation="portrait"

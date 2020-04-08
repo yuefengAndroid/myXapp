@@ -6,16 +6,21 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.xapp.R;
 import com.example.xapp.base.XFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 public class XChatListView extends XFragment {
     private Activity activity;
     private View view;
+
+
 
     @Override
     public void onAttach(@NonNull Activity activity) {
@@ -35,6 +40,8 @@ public class XChatListView extends XFragment {
         view = inflater.inflate(R.layout.view_chatlist, container, false);
         return view;
     }
+
+
 
     @Override
     public void refresh() {

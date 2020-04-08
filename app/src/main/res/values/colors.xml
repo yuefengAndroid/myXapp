@@ -24,6 +24,8 @@
 
 
     <color name="gray_aaaaaa">#AAAAAA</color>
+    <color name="gray_bbbbbb">#bbbbbb</color>
+    <color name="gray_cccccc">#cccccc</color>
     <color name="gray_dddddd">#DDDDDD</color>
     <color name="gray_eeeeee">#EEEEEE</color>
     <color name="gray_e7e7e7">#E7E7E7</color>
@@ -46,4 +48,7 @@
     <color name="red_d0021b">#d0021b</color>
     <color name="colorRed">#ff4043</color>
     <color name="color_c05252">#c05252</color>
+
+    <color name="button_04a99d">#04a99d</color>  <!--允許/不允許/確定/取消-->
+    <color name="button_007aff">#007aff</color>  <!--登出/取消-->
 </resources>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white">
+
+    <TextView
+        android:id="@+id/vhTvHomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="X Love App"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vhTvTitleLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vhIvSetImg"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/set_while"
+        app:layout_constraintBottom_toBottomOf="@+id/vhTvHomeTitle"
+        app:layout_constraintLeft_toLeftOf="@+id/vhTvHomeTitle"
+        app:layout_constraintTop_toTopOf="@+id/vhTvHomeTitle" />
+
+    <TextView
+        android:id="@+id/vhTvSettingBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vhIvSetImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vhIvSetImg"
+        app:layout_constraintRight_toRightOf="@+id/vhIvSetImg"
+        app:layout_constraintTop_toTopOf="@+id/vhIvSetImg" />
+
+    <ImageView
+        android:id="@+id/vhIvSerachImg"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/search_while"
+        app:layout_constraintBottom_toBottomOf="@+id/vhIvSetImg"
+        app:layout_constraintRight_toRightOf="@+id/vhTvHomeTitle"
+        app:layout_constraintTop_toTopOf="@+id/vhIvSetImg" />
+
+    <TextView
+        android:id="@+id/vhTvTitleLine"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:background="@color/gray_e7e7e7"
+        app:layout_constraintBottom_toTopOf="@+id/vhNsvHomeGroup"
+        app:layout_constraintLeft_toLeftOf="@+id/vhTvHomeTitle"
+        app:layout_constraintRight_toRightOf="@+id/vhTvHomeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vhTvHomeTitle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/vhNsvHomeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vhTvTitleLine">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/vhTvbar01"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/x01"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/x01"
+                app:layout_constraintBottom_toBottomOf="@+id/vhTvbar01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/x01Text"
+                app:layout_constraintTop_toTopOf="@+id/vhTvbar01" />
+
+            <TextView
+                android:id="@+id/x01Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="女力新到貨"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/x01"
+                app:layout_constraintLeft_toRightOf="@+id/x01"
+                app:layout_constraintTop_toTopOf="@+id/x01" />
+
+            <ImageView
+                android:id="@+id/x03"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="28dp"
+                android:src="@drawable/x03"
+                app:layout_constraintBottom_toBottomOf="@+id/x01"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/x01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="SEE MORE"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/x03"
+                app:layout_constraintRight_toLeftOf="@+id/x03"
+                app:layout_constraintTop_toTopOf="@+id/x03" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vhRvGirlsItemView"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/vhTvbar02"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vhTvbar01"
+                tools:itemCount="1"
+                tools:listitem="@layout/view_girls_list_item" />
+
+            <TextView
+                android:id="@+id/vhTvbar02"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toTopOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vhRvGirlsItemView" />
+
+            <ImageView
+                android:id="@+id/x02"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/x02"
+                app:layout_constraintBottom_toBottomOf="@+id/vhTvbar02"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/x02Text" />
+
+            <TextView
+                android:id="@+id/x02Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="附近邂逅"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/x02"
+                app:layout_constraintLeft_toRightOf="@+id/x02"
+                app:layout_constraintTop_toTopOf="@+id/x02" />
+
+            <ImageView
+                android:id="@+id/x04"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/x03"
+                app:layout_constraintBottom_toBottomOf="@+id/x02"
+                app:layout_constraintRight_toRightOf="@+id/x03"
+                app:layout_constraintTop_toTopOf="@+id/x02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="SEE MORE"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/x04"
+                app:layout_constraintRight_toLeftOf="@+id/x04"
+                app:layout_constraintTop_toTopOf="@+id/x04" />
+
+            <ImageView
+                android:id="@+id/vhIvGirlsBg01"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/girls_b1"
+                app:layout_constraintBottom_toTopOf="@+id/vhTvGirlsBgLine"
+                app:layout_constraintLeft_toLeftOf="@+id/x02"
+                app:layout_constraintRight_toRightOf="@+id/x04"
+                app:layout_constraintTop_toBottomOf="@+id/vhTvbar02" />
+
+            <TextView
+                android:id="@+id/vhTvGirlsBgLine"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/gray_e7e7e7"
+                app:layout_constraintBottom_toTopOf="@+id/vhIvGirlsBg02"
+                app:layout_constraintLeft_toLeftOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintRight_toRightOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintTop_toBottomOf="@+id/vhIvGirlsBg01" />
+
+            <ImageView
+                android:id="@+id/vhIvGirlsBg02"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:src="@drawable/girls_b2"
+                app:layout_constraintBottom_toTopOf="@+id/vhTvGirlsBgLine2"
+                app:layout_constraintLeft_toLeftOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintRight_toRightOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintTop_toBottomOf="@+id/vhTvGirlsBgLine" />
+
+            <TextView
+                android:id="@+id/vhTvGirlsBgLine2"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/gray_e7e7e7"
+                app:layout_constraintBottom_toTopOf="@+id/vhTvbar03"
+                app:layout_constraintLeft_toLeftOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintRight_toRightOf="@+id/vhIvGirlsBg01"
+                app:layout_constraintTop_toBottomOf="@+id/vhIvGirlsBg02" />
+
+            <TextView
+                android:id="@+id/vhTvbar03"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/vhRvGirlsGroupView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vhTvGirlsBgLine2" />
+
+            <ImageView
+                android:id="@+id/x05"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/x03"
+                app:layout_constraintBottom_toBottomOf="@+id/vhTvbar03"
+                app:layout_constraintLeft_toLeftOf="@+id/x03"
+                app:layout_constraintRight_toRightOf="@+id/x03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="SEE MORE"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/x05"
+                app:layout_constraintRight_toLeftOf="@+id/x05"
+                app:layout_constraintTop_toTopOf="@+id/x05" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vhRvGirlsGroupView"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/vhIvGirlsBg02"
+                app:layout_constraintTop_toBottomOf="@+id/vhTvbar03" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

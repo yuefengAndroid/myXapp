@@ -1,11 +1,13 @@
-package com.example.xapp.home;
+package com.example.xapp.login;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -15,8 +17,7 @@ import com.example.xapp.base.XFragment;
 import com.example.xapp.base.XNoScrollViewPager;
 import com.example.xapp.chat.XChatListView;
 import com.example.xapp.favorite.XFavoriteView;
-import com.example.xapp.login.XLoginView;
-import com.example.xapp.login.XSelectLoginView;
+import com.example.xapp.home.XHomeView;
 import com.example.xapp.map.XMapView;
 import com.example.xapp.orders.XOrderListView;
 
@@ -43,8 +44,8 @@ public class XStartPlatformView extends AppCompatActivity {
     private void setupViewPage() {
         pageViewList = new ArrayList<>();
 
-        XHomeListView xHomeListView = new XHomeListView();
-        pageViewList.add(0, xHomeListView);
+        XHomeView xHomeView = new XHomeView();
+        pageViewList.add(0, xHomeView);
         XChatListView xChatListView = new XChatListView();
         pageViewList.add(1, xChatListView);
         XMapView xMapView = new XMapView();
@@ -119,4 +120,26 @@ public class XStartPlatformView extends AppCompatActivity {
             }
         }
     };
+
+    @Override
+    public void onBackPressed() {
+        showExitAppMessage();
+    }
+
+    /**
+     * 離開APP訊息
+     */
+    private void showExitAppMessage() {
+        AlertDialog builder = new AlertDialog.Builder(XStartPlatformView.this)
+                .setMessage("確定離開APP?")
+                .setPositiveButton("確定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finishAffinity();
+                        System.exit(0);
+                    }
+                })
+                .show();
+        builder.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(this, R.color.button_04a99d));
+    }
 }

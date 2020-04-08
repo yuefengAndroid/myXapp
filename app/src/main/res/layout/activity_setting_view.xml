@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    tools:context=".home.XSettingView">
+
+    <TextView
+        android:id="@+id/vsTvBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_fillet_ffffff_radius18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vsTvTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="設定"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground"
+        app:layout_constraintRight_toRightOf="@+id/vsTvBackground"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvBackground_gray1"/>
+
+    <ImageView
+        android:id="@+id/vsIvCloseImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back_x"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvTitleText"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvTitleText"
+        app:layout_constraintRight_toRightOf="@+id/vsTvTitleText"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_gray1"
+        android:layout_width="match_parent"
+        android:background="@color/gray_d8d8d8"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvTitleText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_white1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_gray1"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvLine01"/>
+
+    <ImageView
+        android:id="@+id/vsIvImgM01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/m01"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground_white1"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground_white1"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvBackground_white1"/>
+
+    <TextView
+        android:id="@+id/vsTvTextM01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="會員資料"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM01"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM01"
+        app:layout_constraintLeft_toRightOf="@+id/vsIvImgM01"/>
+
+    <ImageView
+        android:id="@+id/vsIvNextImg01"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM01"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM01"
+        app:layout_constraintRight_toRightOf="@+id/vsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLine01"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvTextM01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_white1"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvBackground_white2"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_white2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvLine01"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvLine02"/>
+
+    <ImageView
+        android:id="@+id/vsIvImgM02"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/m02"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground_white2"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground_white2"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvBackground_white2"/>
+
+    <TextView
+        android:id="@+id/vsTvTextM02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="訂單紀錄"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM02"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM02"
+        app:layout_constraintLeft_toRightOf="@+id/vsIvImgM02"/>
+
+    <ImageView
+        android:id="@+id/vsIvNextImg02"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM02"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM02"
+        app:layout_constraintRight_toRightOf="@+id/vsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLine02"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvTextM02"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_white2"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvBackground_white3"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_white3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvLine02"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvLine03"/>
+
+    <ImageView
+        android:id="@+id/vsIvImgM03"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/m03"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground_white3"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground_white3"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvBackground_white3"/>
+
+    <TextView
+        android:id="@+id/vsTvTextM03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="最新消息"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM03"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM03"
+        app:layout_constraintLeft_toRightOf="@+id/vsIvImgM03"/>
+
+    <ImageView
+        android:id="@+id/vsIvNextImg03"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM03"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM03"
+        app:layout_constraintRight_toRightOf="@+id/vsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLine03"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvTextM03"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_white3"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvBackground_white4"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_white4"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvLine03"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvLine04"/>
+
+    <ImageView
+        android:id="@+id/vsIvImgM04"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/m04"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground_white4"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground_white4"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvBackground_white4"/>
+
+    <TextView
+        android:id="@+id/vsTvTextM04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="隱私說明"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM04"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM04"
+        app:layout_constraintLeft_toRightOf="@+id/vsIvImgM04"/>
+
+    <ImageView
+        android:id="@+id/vsIvNextImg04"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM04"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM04"
+        app:layout_constraintRight_toRightOf="@+id/vsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLine04"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvTextM04"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_white4"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvBackground_white5"/>
+
+    <TextView
+        android:id="@+id/vsTvBackground_white5"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvLine04"
+        app:layout_constraintBottom_toTopOf="@+id/vsTvLine05"/>
+
+    <ImageView
+        android:id="@+id/vsIvImgM05"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/m05"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="@+id/vsTvBackground_white5"
+        app:layout_constraintLeft_toLeftOf="@+id/vsTvBackground_white5"
+        app:layout_constraintBottom_toBottomOf="@+id/vsTvBackground_white5"/>
+
+    <TextView
+        android:id="@+id/vsTvTextM05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="客戶服務"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM05"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM05"
+        app:layout_constraintLeft_toRightOf="@+id/vsIvImgM05"/>
+
+    <ImageView
+        android:id="@+id/vsIvNextImg05"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/next_v"
+        app:layout_constraintTop_toTopOf="@+id/vsIvImgM05"
+        app:layout_constraintBottom_toBottomOf="@+id/vsIvImgM05"
+        app:layout_constraintRight_toRightOf="@+id/vsIvCloseImg"
+        app:layout_constraintLeft_toLeftOf="@+id/vsIvCloseImg"/>
+
+    <TextView
+        android:id="@+id/vsTvLine05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_d8d8d8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTvBackground_white5"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
